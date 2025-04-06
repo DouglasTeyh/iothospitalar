@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Hospitalar - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="nav-placeholder"></div>
+
+        <main class="conteudo">
+            <div class="conteudo-principal">
+                <h1>Bem-vindo ao IoT Hospitalar</h1>
+                <p>O projeto IoT Hospitalar, desenvolvido no IFPE Campus Palmares, tem como
+                    principal objetivo integrar a tecnologia da Internet das Coisas (IoT) ao
+                    ambiente hospitalar, promovendo soluções inovadoras e acessíveis para a
+                    área da saúde.</p>
+                <p>A iniciativa busca desenvolver protótipos e sistemas inteligentes
+                    capazes de monitorar, automatizar e otimizar processos hospitalares
+                    — desde o acompanhamento de pacientes até o controle de equipamentos
+                    e ambientes. Utilizando sensores, microcontroladores e plataformas
+                    conectadas à internet, os alunos e professores envolvidos no projeto
+                    unem conhecimentos em eletrônica, programação e saúde pública para criar
+                    tecnologias que impactam diretamente o bem-estar e a eficiência
+                    dos atendimentos médicos.</p>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("components/nav.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+
+            fetch("components/footer.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                });
+        });
+    </script>
+</body>
+
+</html>

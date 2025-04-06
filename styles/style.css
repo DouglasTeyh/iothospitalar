@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px;
+    margin: 0 0 40px 0;
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+a {
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    transition: ease-in-out 0.1s;
+}
+
+a:hover {
+    font-weight: 900;
+    color: #008607;
+    transition: ease-in-out 0.1s;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #005c00;
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 0 0;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-div-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0;
+}
+
+.footer-div-principal-superior {
+    display: flex;
+    width: auto;
+    height: 70%;
+    margin: 0 0 20px 0;
+}
+
+.footer-div-principal-superior-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding: 0 20px;
+    width: 50%;
+}
+
+.footer-div-principal-superior-esquerda h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+}
+
+.footer-div-principal-superior-esquerda p {
+    margin: 0 0 10px 0;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Admin</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+
+<body>
+
+
+    <form id="postForm">
+        <h1>Painel de Postagens</h1>
+        <label>Título:</label>
+        <input type="text" id="titulo" required>
+
+        <label>Conteúdo:</label>
+        <textarea id="conteudo" required></textarea>
+
+        <label>Link para download (opcional):</label>
+        <input type="url" id="download">
+
+        <label>Imagem (opcional):</label>
+        <input type="file" id="imagem">
+
+        <button type="submit">Publicar</button>
+    </form>
+
+    <p id="status"></p>
+
+    <div id="postagensAdmin" class="postagens-admin"></div>
+
+    <script type="module" src="scripts/admin.js"></script>
+</body>
+
+</html>
