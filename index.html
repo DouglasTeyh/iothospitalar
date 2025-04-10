@@ -9,46 +9,38 @@
 </head>
 
 <body>
-    <div class="container">
-
+        <div class="container">
+        <div id="nav-principal-placeholder"></div>
         <div id="nav-placeholder"></div>
-
         <main class="conteudo">
+            <a class="logotipo-ifpe" href="https://www.palmares.ifpe.edu.br/"><img src="https://www.palmares.ifpe.edu.br/img/IFPE-Horizontal.png" alt="logotipo-ifpe"></a>
             <div class="conteudo-principal">
-                <h1>Bem-vindo ao IoT Hospitalar</h1>
-                <p>O projeto IoT Hospitalar, desenvolvido no IFPE Campus Palmares, tem como
-                    principal objetivo integrar a tecnologia da Internet das Coisas (IoT) ao
-                    ambiente hospitalar, promovendo soluções inovadoras e acessíveis para a
-                    área da saúde.</p>
-                <p>A iniciativa busca desenvolver protótipos e sistemas inteligentes
-                    capazes de monitorar, automatizar e otimizar processos hospitalares
-                    — desde o acompanhamento de pacientes até o controle de equipamentos
-                    e ambientes. Utilizando sensores, microcontroladores e plataformas
-                    conectadas à internet, os alunos e professores envolvidos no projeto
-                    unem conhecimentos em eletrônica, programação e saúde pública para criar
-                    tecnologias que impactam diretamente o bem-estar e a eficiência
-                    dos atendimentos médicos.</p>
+                <div class="conteudo-principal-esquerda">
+                    <h1>Bem-vindo ao IoT Hospitalar</h1>
+                    <h2>Inovação e Tecnologia na Saúde</h2>
+                    <p>O projeto IoT Hospitalar, desenvolvido no IFPE Campus Palmares, tem como
+                        principal objetivo integrar a tecnologia da Internet das Coisas (IoT) ao
+                        ambiente hospitalar, promovendo soluções inovadoras e acessíveis para a
+                        área da saúde.</p>
+                    <!-- <p>A iniciativa busca desenvolver protótipos e sistemas inteligentes
+                        capazes de monitorar, automatizar e otimizar processos hospitalares
+                        — desde o acompanhamento de pacientes até o controle de equipamentos
+                        e ambientes. Utilizando sensores, microcontroladores e plataformas
+                        conectadas à internet, os alunos e professores envolvidos no projeto
+                        unem conhecimentos em eletrônica, programação e saúde pública para criar
+                        tecnologias que impactam diretamente o bem-estar e a eficiência
+                        dos atendimentos médicos.</p> -->
+                    <a class="botao-padrao-01" href="projetos.html">Saiba Mais</a>
+                </div>
+                <div class="conteudo-principal-direita">
+                    <img src="src/medico-img.png" alt="imagem-medico">
+                </div>
             </div>
         </main>
-
         <div id="footer-placeholder"></div>
-
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch("components/nav.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("nav-placeholder").innerHTML = data;
-                });
-
-            fetch("components/footer.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("footer-placeholder").innerHTML = data;
-                });
-        });
-    </script>
+<script src="scripts/navs-loader.js"></script>
+<script src="scripts/scroll-suave.js"></script>
 </body>
 
 </html>

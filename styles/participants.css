@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: -70px;
+}
+.div-principal{
+    width: 70%;
+    margin:100px 0 0 0;
+    padding: 0;
+}
+.div-principal h1{
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 0 60px 0;
+    padding: 0;
+    font-weight: 800;
+    color: #005c00;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: left;
+    text-decoration: unset;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    font-weight: 600;
+    color: #000000;
+}
+
+.div-principal a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #009900;
+    margin: 0;
+    cursor: pointer;
+}
+.div-principal a:hover{
+    text-decoration: underline;
+    color: #006b00;
+}

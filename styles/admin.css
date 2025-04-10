@@ -94,11 +94,24 @@ form#postForm button:hover {
 
 .card-postagem p {
     margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5em;
+    max-height: 4.5em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    transition: max-height 0.3s ease;
+}
+
+.card-postagem.expanded p {
+    max-height: 1000px;
+    -webkit-line-clamp: unset;
 }
 
 .card-postagem a {
-    color: #005c00;
-    text-decoration: underline;
+    display: none;
 }
 
 .card-postagem img {
@@ -133,6 +146,17 @@ form#postForm button:hover {
 
 .card-postagem .excluir:hover {
     background: #a93226;
+}
+
+.card-postagem .toggle {
+    background: transparent;
+    color: #008607;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 0;
+    margin-top: 5px;
 }
 
 progress {
