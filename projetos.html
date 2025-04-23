@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <div id="nav-principal-placeholder"></div>
     <div id="nav-placeholder"></div>
     <main>
         <h1>Projetos Publicados</h1>
@@ -16,21 +17,6 @@
     <div id="footer-placeholder"></div>
 
     <script type="module" src="scripts/projetos.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch("components/nav.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("nav-placeholder").innerHTML = data;
-                });
-
-            fetch("components/footer.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("footer-placeholder").innerHTML = data;
-                });
-        });
-    </script>
-</body>
+    <script src="scripts/navs-loader.js"></script>
 
 </html>

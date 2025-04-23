@@ -162,21 +162,32 @@ main {
 
 .navbar-links a {
     font-family: "Poppins", sans-serif;
-    border-radius: 15px;
+    border-radius: 0px;
+    padding: 5px;
     text-decoration: none;
     color: #000;
     transition: all 0.2s ease-in-out;
 }
 
 .navbar-links a:hover {
-    text-decoration: underline;
     color: #008607;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-links :hover {
+    transform: translate3d(0, -2px, 0);
+    background-color: #e5ffdd;
+    border-radius: 0px;
+    color: #008607;
+    transition: all 0.2s ease-in-out;
 }
 
 .footer {
