@@ -1,82 +1,172 @@
-<link rel="stylesheet" href="styles/style.css" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer IoT Hospitalar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
 
-<footer class="footer">
-    <div class="footer-div-principal">
-        <div class="footer-div-principal-superior">
-            <div class="footer-div-principal-superior-esquerda">
-                <h1>IoT HOSPITALAR</h1>
-                <p>
-                    O projeto IoT Hospitalar, desenvolvido no IFPE Campus Palmares, tem
-                    como principal objetivo integrar a tecnologia da Internet das Coisas
-                    (IoT) ao ambiente hospitalar, promovendo soluções inovadoras e
-                    acessíveis para a área da saúde.
-                </p>
-                <p>
-                    A iniciativa busca desenvolver protótipos e sistemas inteligentes
-                    capazes de monitorar, automatizar e otimizar processos hospitalares —
-                    desde o acompanhamento de pacientes até o controle de equipamentos e
-                    ambientes. Utilizando sensores, microcontroladores e plataformas
-                    conectadas à internet, os alunos e professores envolvidos no projeto
-                    unem conhecimentos em eletrônica, programação e saúde pública para
-                    criar tecnologias que impactam diretamente o bem-estar e a eficiência
-                    dos atendimentos médicos.
-                </p>
+        .footer {
+        display: flex;
+        justify-content: center;
+        background-color: #005c00;
+        width: 100%;
+        height: 50vh;
+        color: #fff;
+        margin-top: 50px;
+        padding: 50px 0 0 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-div-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:70%;
+        }
+
+        .footer-div-principal-superior {
+        display: flex;
+        width: 100%;
+        height: 70%;
+        margin-bottom: 20px;
+        gap: 20px;
+        }
+
+        .footer-col-mapa,
+        .footer-col-texto,
+        .footer-col-links {
+        padding: 0 20px;
+        }
+
+        .footer-col-texto {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        }
+
+        .footer-col-texto h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 10px;
+        color: #fff;
+        }
+
+        .footer-col-texto p {
+        margin-bottom: 10px;
+        text-align: justify;
+        }
+
+        .footer-col-links {
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+        .footer-col-links h2 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+        }
+
+        .footer-col-links ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .footer-col-links ul li {
+        margin-bottom: 8px;
+        }
+
+        .footer-col-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+        }
+
+        .footer-col-links ul li a:hover {
+        color: #ccc;
+        }
+
+        .footer-icons {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        }
+
+        .footer-icons a {
+        font-size: 1.5rem;
+        color: #fff;
+        transition: color 0.3s;
+        }
+
+        .footer-icons a:hover {
+        color: #ccc;
+        }
+
+        .footer-div-principal-inferior {
+        background-color: #007300;
+        width: 100%;
+        padding: 10px 0;
+        }
+        .footer-creator-link {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="footer-div-principal">
+            <div class="footer-div-principal-superior">
+
+                
+                <div class="footer-col-texto">
+                    <h1>IoT HOSPITALAR</h1>
+                    <p>
+                        O projeto IoT Hospitalar, do IFPE Campus Palmares, visa aplicar a tecnologia da Internet das Coisas em hospitais, criando soluções inteligentes e acessíveis. Alunos e professores desenvolvem sistemas com sensores e microcontroladores para monitorar pacientes, automatizar processos e melhorar a eficiência no atendimento médico.
+
+                        A iniciativa também promove o aprendizado prático e multidisciplinar, unindo áreas como eletrônica, programação e saúde pública. Com isso, os participantes ganham experiência em inovação tecnológica enquanto contribuem para avanços na qualidade dos serviços hospitalares.                    </p>
+                </div>
+
+                <div class="footer-col-mapa">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4339.505201420856!2d-35.5769611889771!3d-8.684798488409829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa0aadaa16061b%3A0x3e0528d7fc29f529!2sIFPE%20-%20Campus%20Palmares!5e1!3m2!1spt-BR!2sbr!4v1745519208327!5m2!1spt-BR!2sbr" 
+                        width="424" 
+                        height="270" 
+                        style="border:0; pointer-events: none;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="footer-col-links">
+                    <div class="footer-icons">
+                        <a href="https://www.instagram.com/iothospitalar/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:thiago.bezerra@palmares.ifpe.edu.br"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <h2>Links Rápidos</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="publicacoes.html">Publicações</a></li>
+                        <li><a href="pesquisas.html">Pesquisas</a></li>
+                        <li><a href="participants.html">Participantes</a></li>
+                    </ul>
+                </div>
             </div>
-            <div></div>
-            <div></div>
         </div>
-        <div class="footer-div-principal-inferior">
-            <p style="margin: auto">© 2025 - Todos os direitos reservados</p>
-        </div>
+    </footer>
+    <div class="footer-div-principal-inferior">
+        <a class="footer-creator-link" href="https://www.linkedin.com/in/douglasteyh/"><p>© 2025 - Todos os direitos reservados | By Douglas</p></a
     </div>
-</footer>
 
-<style>
-
-    .footer {
-    display: flex;
-    justify-content: center;
-    background-color: #005c00;
-    width: 100%;
-    height: 50vh;
-    color: #fff;
-    margin-top: 50px;
-    padding: 20px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.footer-div-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-}
-
-.footer-div-principal-superior {
-    display: flex;
-    width: 100%;
-    height: 70%;
-    margin-bottom: 20px;
-}
-
-.footer-div-principal-superior-esquerda {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    padding: 0 20px;
-    width: 40%;
-}
-
-.footer-div-principal-superior-esquerda h1 {
-    font-size: 2rem;
-    font-weight: 900;
-    margin-bottom: 10px;
-}
-
-.footer-div-principal-superior-esquerda p {
-    margin-bottom: 10px;
-}
-</style>
+</body>
+</html>

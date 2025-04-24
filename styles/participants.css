@@ -17,11 +17,18 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    margin-top: 90px;
+    height: auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
 }
 .div-principal{
-    width: 40%;
+    width: 70%;
     margin:0 auto;
     padding: 0;
 }
@@ -61,8 +68,5 @@ h2{
 }
 
 .div-principal-spacement{
-    margin: 100px auto;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
+    height: 80vh;
 }

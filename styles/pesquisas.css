@@ -113,3 +113,17 @@ main {
     margin: 5px 0;
     
 }
+
+.imagens-pesquisa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+.imagens-pesquisa img{
+    width: 426px;
+    height: 240px;
+    margin: 0 5px;
+}
