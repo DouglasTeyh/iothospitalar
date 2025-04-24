@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* .form-area{
+    width: 40%;
+    height: 30%vh;
+    background-color: #ffffff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-area h1{
+    text-align: center;
+    color: #008607;
+    padding-top: 20px;
+}
+.form-area p{
+    min-width: 350px;
+    max-width: 520px;
+    text-align: center;
+    color: #008607;
+    padding-top: 10px;
+}
+.form-area form{
+    width: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-area form input{
+    width: 50%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+} */
+
+.pesquisas-area{
+    margin: 5% 0 0 0;
+    width: 80%;
+    height: auto;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisas-area h1{
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #008607;
+    margin-bottom: 20px;
+}
+
+.pesquisas-atuais{
+    background-color: #ffffff;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 30px;
+}
+.area-pesquisas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisas-passadas{
+    background-color: #ffffff;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+}
+.pesquisa{
+    margin: 10px 0;
+    padding: 20px;
+    width: 95%;
+    text-align: justify;
+    border: 1px solid #008607;
+}
+
+.pesquisa p{
+    font-weight: 500;
+    margin: 5px 0;
+    
+}
