@@ -29,7 +29,8 @@ section{
 }
 .div-principal{
     width: 70%;
-    margin:0 auto;
+    height: auto;
+    margin: 20px auto;
     padding: 0;
 }
 .div-principal h1{
