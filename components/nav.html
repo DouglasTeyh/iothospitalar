@@ -1,8 +1,6 @@
-<link rel="stylesheet" href="styles/style.css" />
-
 <nav class="navbar">   
     <div class="navbar-conteudo">
-        <a class="navbar-logo-img" href="login.html">
+        <a class="navbar-logo-img" href="index.html">
             <img src="src/iot-hospitalar-extended.png" alt="Logotipo" height="40px">
         </a>
         <ul class="navbar-links">
@@ -14,3 +12,56 @@
         </ul>
     </div>
 </nav>
+
+<style>
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 97.6%;
+    height: 30px;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.navbar-links a {
+    font-family: "Poppins", sans-serif;
+    border-radius: 0px;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-links a:hover {
+    color: #008607;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-links :hover {
+    transform: translate3d(0, -2px, 0);
+    background-color: #e5ffdd;
+    border-radius: 0px;
+    color: #008607;
+    transition: all 0.2s ease-in-out;
+}
+</style>
