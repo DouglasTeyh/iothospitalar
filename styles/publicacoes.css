@@ -3,8 +3,12 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: #e5ffdd;
+  font-size: 1rem;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 main {
   max-width: 1000px;
   margin: auto;

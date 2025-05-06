@@ -6,168 +6,177 @@
     <title>Footer IoT Hospitalar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
+        * {
+        box-sizing: border-box;
+        }
 
-        .footer {
+        .iot-footer-wrapper .footer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         background-color: #005c00;
         width: 100%;
-        height: 50vh;
         color: #fff;
         margin-top: 50px;
         padding: 50px 0 0 0;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .footer-div-principal {
+        .iot-footer-wrapper .footer-div-principal {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width:70%;
+        width: 70%;
         }
 
-        .footer-div-principal-superior {
+        .iot-footer-wrapper .footer-div-principal-superior {
         display: flex;
         width: 100%;
-        height: 70%;
         margin-bottom: 20px;
         gap: 20px;
         }
 
-        .footer-col-mapa,
-        .footer-col-texto,
-        .footer-col-links {
-        padding: 0 20px;
+        .iot-footer-wrapper .footer-col-mapa,
+        .iot-footer-wrapper .footer-col-texto,
+        .iot-footer-wrapper .footer-col-links {
+        padding: 0 16px;
         }
 
-        .footer-col-texto {
+        .iot-footer-wrapper .footer-col-texto {
         display: flex;
-        width: 60%;
+        width: 70%;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
+        align-items: flex-start;
         }
 
-        .footer-col-texto h1 {
-        font-size: 2rem;
+        .iot-footer-wrapper .footer-col-texto h1 {
+        font-size: 1.5rem;
         font-weight: 900;
         margin-bottom: 10px;
         color: #fff;
         }
 
-        .footer-col-texto p {
+        .iot-footer-wrapper .footer-col-texto p {
         margin-bottom: 10px;
         text-align: justify;
+        font-size: 0.9rem;
         }
 
-        .footer-col-links {
+        .iot-footer-wrapper .footer-col-links {
         display: flex;
         width: 20%;
         flex-direction: column;
         justify-content: center;
         }
 
-        .footer-col-links h2 {
+        .iot-footer-wrapper .footer-col-links h2 {
         font-size: 1.3rem;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 10px 0;
         color: #fff;
         }
 
-        .footer-col-links ul {
+        .iot-footer-wrapper .footer-col-links ul {
         list-style: none;
         padding: 0;
         }
 
-        .footer-col-links ul li {
+        .iot-footer-wrapper .footer-col-links ul li {
         margin-bottom: 8px;
         }
 
-        .footer-col-links ul li a {
+        .iot-footer-wrapper .footer-col-links ul li a {
         color: #fff;
         text-decoration: none;
         transition: color 0.3s;
         }
 
-        .footer-col-links ul li a:hover {
+        .iot-footer-wrapper .footer-col-links ul li a:hover {
         color: #ccc;
         }
 
-        .footer-icons {
+        .iot-footer-wrapper .footer-icons {
         display: flex;
         gap: 15px;
         margin-bottom: 10px;
         }
 
-        .footer-icons a {
+        .iot-footer-wrapper .footer-icons a {
         font-size: 1.5rem;
         color: #fff;
         transition: color 0.3s;
         }
 
-        .footer-icons a:hover {
+        .iot-footer-wrapper .footer-icons a:hover {
         color: #ccc;
         }
 
-        .footer-div-principal-inferior {
+        .iot-footer-wrapper .footer-div-principal-inferior {
         background-color: #007300;
         width: 100%;
         padding: 10px 0;
+        text-align: center;
         }
-        .footer-creator-link {
+
+        .iot-footer-wrapper .footer-creator-link {
         color: #fff;
         text-decoration: none;
-        text-align: center;
         }
     </style>
 </head>
 <body>
-
-    <footer class="footer">
+    <div class="iot-footer-wrapper">
+        <footer class="footer">
         <div class="footer-div-principal">
             <div class="footer-div-principal-superior">
 
-                
-                <div class="footer-col-texto">
-                    <h1>IoT HOSPITALAR</h1>
-                    <p>
-                        O projeto IoT Hospitalar, do IFPE Campus Palmares, visa aplicar a tecnologia da Internet das Coisas em hospitais, criando soluções inteligentes e acessíveis. Alunos e professores desenvolvem sistemas com sensores e microcontroladores para monitorar pacientes, automatizar processos e melhorar a eficiência no atendimento médico.
+            <div class="footer-col-texto">
+                <h1>IoT HOSPITALAR</h1>
+                <p>
+                O projeto IoT Hospitalar, do IFPE Campus Palmares, visa aplicar a tecnologia da Internet das Coisas em hospitais, criando soluções inteligentes e acessíveis. Alunos e professores desenvolvem sistemas com sensores e microcontroladores para monitorar pacientes, automatizar processos e melhorar a eficiência no atendimento médico.
 
-                        A iniciativa também promove o aprendizado prático e multidisciplinar, unindo áreas como eletrônica, programação e saúde pública. Com isso, os participantes ganham experiência em inovação tecnológica enquanto contribuem para avanços na qualidade dos serviços hospitalares.                    </p>
-                </div>
+                A iniciativa também promove o aprendizado prático e multidisciplinar, unindo áreas como eletrônica, programação e saúde pública. Com isso, os participantes ganham experiência em inovação tecnológica enquanto contribuem para avanços na qualidade dos serviços hospitalares.
+                </p>
+            </div>
 
-                <div class="footer-col-mapa">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4339.505201420856!2d-35.5769611889771!3d-8.684798488409829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa0aadaa16061b%3A0x3e0528d7fc29f529!2sIFPE%20-%20Campus%20Palmares!5e1!3m2!1spt-BR!2sbr!4v1745519208327!5m2!1spt-BR!2sbr" 
-                        width="424" 
-                        height="270" 
-                        style="border:0; pointer-events: none;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+            <div class="footer-col-mapa">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4339.505201420856!2d-35.5769611889771!3d-8.684798488409829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa0aadaa16061b%3A0x3e0528d7fc29f529!2sIFPE%20-%20Campus%20Palmares!5e1!3m2!1spt-BR!2sbr!4v1745519208327!5m2!1spt-BR!2sbr" 
+                width="410" 
+                height="270" 
+                style="border:0; pointer-events: none;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="footer-col-links">
+                <div class="footer-icons">
+                <a href="mailto:thiago.bezerra@palmares.ifpe.edu.br"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.researchgate.net/profile/Thiago-Bezerra-10"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="http://www.linkedin.com/in/thiago-valentim-a19063a6"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/iothospitalar/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="footer-col-links">
-                    <div class="footer-icons">
-                        <a href="mailto:thiago.bezerra@palmares.ifpe.edu.br"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.researchgate.net/profile/Thiago-Bezerra-10"><i class="fa-brands fa-researchgate"></i></a>
-                        <a href="http://www.linkedin.com/in/thiago-valentim-a19063a6"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/iothospitalar/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <h2>Links Rápidos</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="publicacoes.html">Publicações</a></li>
-                        <li><a href="pesquisas.html">Pesquisas</a></li>
-                        <li><a href="participants.html">Participantes</a></li>
-                    </ul>
-                </div>
+                <h2>Links Rápidos</h2>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publicacoes.html">Publicações</a></li>
+                <li><a href="pesquisas.html">Pesquisas</a></li>
+                <li><a href="participants.html">Participantes</a></li>
+                </ul>
+            </div>
+
             </div>
         </div>
-    </footer>
-    <div class="footer-div-principal-inferior">
-        <a class="footer-creator-link" href="https://www.linkedin.com/in/douglasteyh/" target="_blank"><p>© 2025 - Todos os direitos reservados | By Douglas</p></a
+
+        <div class="footer-div-principal-inferior">
+            <a class="footer-creator-link" href="https://www.linkedin.com/in/douglasteyh/" target="_blank">
+            <p>© 2025 - Todos os direitos reservados | By Douglas</p>
+            </a>
+        </div>
+        </footer>
     </div>
 
 </body>
