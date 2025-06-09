@@ -71,3 +71,20 @@ h2{
 .div-principal-spacement{
     height: 80vh;
 }
+
+@media (max-width: 768px) {
+    .div-principal{
+        width: 80%;
+        text-align: left;
+    }
+    .div-principal h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .div-principal a{
+        font-size: 1rem;
+    }
+}

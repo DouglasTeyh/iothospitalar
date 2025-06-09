@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 main {
     display: flex;
@@ -62,7 +62,7 @@ main {
     margin: 5% 0 0 0;
     width: 80%;
     height: auto;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,4 +130,20 @@ main {
     width: 426px;
     height: 240px;
     margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .pesquisas-area {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .pesquisas-atuais, .pesquisas-passadas {
+        width: 100%;
+    }
+    .imagens-pesquisa img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    
 }
