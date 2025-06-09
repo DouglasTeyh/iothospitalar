@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
+<head>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,7 +132,7 @@
                 height: auto;
                 padding: 0px 0 0px 30px;
             }
-            
+        
             #wrapper-barra-brasil {
                 max-width: 100%;
                 padding: 0 10px;
@@ -169,46 +168,14 @@
             }
         }
 
-        @media screen and (max-width: 768px) {
-            .navbar-conteudo {
-                flex-direction: column;
-                align-items: flex-start;
-                width: 100%;
-                padding: 10px;
-            }
-
-            .navbar-links {
-                flex-direction: column;
-                width: 100%;
-                gap: 10px;
-                padding: 10px 0;
-            }
-
-            .navbar-links li {
-                width: 100%;
-            }
-
-            .navbar-links li a {
-                display: block;
-                width: 100%;
-                padding: 10px;
-                font-size: 1rem;
-            }
-
-            .navbar-logo-img img {
-                height: 35px;
-            }
-        }
-
         /* ===================== Navbar Personalizada ===================== */
-
         .navbar {
             display: flex;
+            flex-direction: row;
             align-items: center;
-            justify-content: center;
             background-color: #ffffff;
             width: 100%;
-            padding: 5px 10px;
+            padding: 10px 0;
             position: relative;
             top: 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -216,84 +183,101 @@
 
         .navbar-conteudo {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
             align-items: center;
             width: 70%;
             max-width: 1200px;
             margin: 0 auto;
+            justify-content: space-between;
         }
 
         .navbar-logo-img img {
             height: 40px;
+            margin-bottom: 0;
         }
 
         .navbar-links {
             list-style: none;
             display: flex;
-            gap: 30px;
+            flex-direction: row;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
         }
 
         .navbar-links li a {
             font-family: "Poppins", sans-serif;
-            font-size: 0.8rem;
-            padding: 5px;
+            font-size: 1rem;
+            padding: 5px 0;
             text-decoration: none;
             color: #000;
-            transition: all 0.2s ease-in-out;
+            position: relative;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .navbar-links li a::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background: #008607;
+            transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
         }
 
         .navbar-links li a:hover {
-            transform: translate3d(0, -2px, 0);
-            background-color: #e5ffdd;
             color: #008607;
         }
 
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
+        .navbar-links li a:hover::after {
+            width: 100%;
         }
 
+        /* 
+           Mantém a navbar em linha no desktop e no mobile.
+           A animação da linha embaixo dos itens da navbar permanece individual.
+        */
         @media screen and (max-width: 768px) {
             .list {
-                display: none !important;
+            display: none !important;
             }
-
+            
             .acesso-info {
-                display: none !important;
-            }
-
-            .menu-toggle {
-                display: block;
-                color: #000;
+            display: none !important;
             }
 
             .navbar-conteudo {
-                display: flex;
-                flex-direction: row;
-                align-items: space-between;
-                width: 100%;
-                padding: 10px;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
             }
 
             .navbar-links {
-                flex-direction: column;
-                width: 100%;
-                gap: 10px;
-                display: none;
+            flex-direction: row;
+            width: 100%;
+            gap: 18px;
+            padding: 0;
+            justify-content: center;
             }
 
-            .navbar-links.show {
-                display: flex;
+            .navbar-links li {
+            width: auto;
             }
 
             .navbar-links li a {
-                font-size: 1rem;
-                padding: 10px 0;
-                display: block;
-                width: 100%;
+            display: flex;
+            width: auto;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 0.67rem;
+            }
+
+            .navbar-logo-img img {
+        
+                align-items: center;
+            height: 35px;
             }
         }
     </style>
@@ -334,9 +318,6 @@
                 <img src="src/iot-hospitalar-extended.png" alt="Logotipo">
             </a>
 
-            <!-- Botão do menu hambúrguer -->
-            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
-
             <!-- Menu de links -->
             <ul class="navbar-links">
                 <li><a class="route" href="index.html">Home</a></li>
@@ -347,17 +328,6 @@
             </ul>
         </div>
     </nav>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggle = document.querySelector(".menu-toggle");
-            const menu = document.querySelector(".navbar-links");
-
-            toggle.addEventListener("click", function () {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
 
 </body>
 </html>
